@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="5.0.0" />
+    <PackageReference Include="URF.Core.Abstractions" Version="3.1.3" />
+    <PackageReference Include="URF.Core.Abstractions.Services" Version="3.1.3" />
+    <PackageReference Include="URF.Core.Services" Version="3.1.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EnerjiSA.GenerationService.Common\EnerjiSA.GenerationService.Common.csproj" />
+    <ProjectReference Include="..\EnerjiSA.GenerationService.Entity\EnerjiSA.GenerationService.Entity.csproj" />
+  </ItemGroup>
+
+</Project>
