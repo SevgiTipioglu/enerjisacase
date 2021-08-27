@@ -50,9 +50,9 @@ namespace EnerjiSA.GenerationService.Service
 
         public async Task<ServiceResponse<List<int>>> GetPowerPlantId()
         {
-            var data = await Repository
+            var data =  Repository
                .Queryable().Select(x => x.Id)
-               .ToListAsync();
+               .ToList();
 
             _logger.LogInformation($"GetPowerPlantId invoked");
 
